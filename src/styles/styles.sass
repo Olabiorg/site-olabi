@@ -1,0 +1,76 @@
+@use "sass:math"
+
+*
+	// outline: 1px solid blue
+
+.gradient2
+	background: linear-gradient(215deg, #71b073 29.9%, #38b1ff 120%), linear-gradient(304deg, rgba(255, 101, 53, 0.4) 24.9%, #aa2743 91%), linear-gradient(-5deg, #b1c9d8 -10.1%, #2776aa 50%), linear-gradient(145deg, rgba(244, 223, 38, .3) 8.9%, #ff1b9a 60%)
+	color: white
+
+.blur
+	-webkit-backdrop-filter: blur(20px)
+
+.newsletter-input
+	display: inline-block
+	background-color: transparent
+	border: 2px darkgray solid
+	color: white
+	padding: 10px 20px
+	font-size: 16px
+	line-height: 1.6em
+	margin-top: 5px
+	margin-bottom: 10px
+	margin-right: 20px
+
+// animação
+$radius: 9999px
+
+b
+	position: absolute
+	left: 0
+	top: 50%
+
+	&:before
+		content: ""
+		display: block
+		padding: 8px
+		padding-bottom: 0
+		box-sizing: border-box
+		border-top-left-radius: $radius
+		border-top-right-radius: $radius
+		background: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #077df8, #74baff)
+		background-clip: content-box, padding-box
+
+	&:after
+		content: ""
+		display: block
+		padding: 8px
+		padding-top: 0
+		box-sizing: border-box
+		border-bottom-left-radius: $radius
+		border-bottom-right-radius: $radius
+		background: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #74baff)
+		background-clip: content-box, padding-box
+
+@for $i from 1 through 40
+	b:nth-of-type(#{$i})
+		width: 100px * $i
+		height: 100px * $i
+		margin-left: math.div(-(100px * $i), 2)
+		margin-top: calc(-1 * 100px * #{$i} / 2)
+		z-index: -1 * $i
+		animation: rotate 20s -0.5s * $i infinite
+
+		&:before,
+		&:after
+			width: 100px * $i
+			height: 50px * $i
+
+@keyframes rotate
+	25%
+		transform: rotate(360deg)
+		-webkit-filter: hue-rotate(360deg)
+
+	50%, 100%
+		transform: rotate(0deg)
+		-webkit-filter: hue-rotate(0deg)

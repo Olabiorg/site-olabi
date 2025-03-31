@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.state-1{
+	color:white;
+	 background-color: #cc1c56;
+}
+
+.state-2{
+	color:black;
+	 background-color: rgb(247, 247, 247);
+}
+
+.gradient-2{
+	background-image: radial-gradient(circle at 101.23% 63.73%, #ff89ae 0, #ff7aaf 16.67%, #ff65aa 33.33%, #e548a2 50%, #c9299b 66.67%, #b00f99 83.33%, #99069c 100%);
+	color:white;
+}
+
+.gradient-1{
+	background: #df0000;
+	background: linear-gradient(90deg,#cc1c56 0%, #5a0032 34%, #cc1c56 94%);
+}
+
+.gradient{
+    background: linear-gradient(258deg, #cc1c56, #5a0032, #df0000);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 44%}
+    50%{background-position:100% 57%}
+    100%{background-position:0% 44%}
+}
+
+/* gradient buttons */
+/* https://nextcodingblog.com/animated-gradient-buttons-on-hover-html-and-css/ */
+.btn{
+    display: block;
+    margin: 40px 0;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background-size: 200%;  
+    transition: 0.6s;
+}
+
+.btn-1{
+    background-image: linear-gradient(to right,
+     #3e64ff,#eb3b5a,#3e64ff);
+}
+
+.btn-2{
+    background-image: linear-gradient(to right, 
+    #3e64ff, #ffffff, #3e64ff)
+}
+
+.btn:hover{
+    background-position: right;
+}
+
+/* scrollbar */
+/* https://gist.github.com/adamblank/7896758 */
+section ::-webkit-scrollbar
+{
+	width:6px;  /* for vertical scrollbars */
+	height:6px; /* for horizontal scrollbars */
+	border-radius: 10px;
+}
+
+section ::-webkit-scrollbar-track
+{
+	background: rgba(0, 0, 0, 0.1);
+}
+
+section ::-webkit-scrollbar-thumb
+{
+	background: rgba(78, 78, 78, 0.5);
+}
+
+
+p{
+	font-size: 16px !important;
+}
+
+.footer p, h5{
+	font-size: 12px !important;
+}
+
+.footer h5{
+	margin-bottom: 8px;
+}
+
+.footer p{
+	color:white;
+}
+
+.footer_links h5 {
+font-size: 12px !important;
+}
+
+
+.footer_list p {
+font-size: 12px !important;
+}
+
+.footer_list a{
+	font-size: 12px !important;
+	display: block;
+}
+
+.section-cc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+		padding-left: 1.25rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background-color:black;
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+    color: #fff;
+}
+
+.content-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.width-wrapper {
+    display: block;
+    max-width: 850px;
+    min-width: 850px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+.width-wrapper.cc {
+    margin-bottom: 0px;
+}
+
+.image-12 {
+    margin-bottom: 15px;
+}
+
+.social-logos a:hover {
+	opacity:.3;
+}

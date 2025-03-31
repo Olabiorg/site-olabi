@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "devops-4988b",
+    "prod": "devops-4988b"
+  },
+  "targets": {},
+  "etags": {}
+}
