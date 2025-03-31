@@ -1,23 +1,23 @@
-# 🌐 Site Olabi
+# Site Olabi
 
 Este repositório contém o código do site da Olabi, um projeto hospedado via [Firebase Hosting](https://firebase.google.com/products/hosting), com build local e deploy automatizado.
 
-## 📦 Requisitos
+## Requisitos
 
 - [Node.js 16.x e 20.x (via NVM)](https://github.com/nvm-sh/nvm)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install)
 - [Firebase CLI](https://firebase.google.com/docs/cli)
 
-## 🚀 Scripts disponíveis
+## Scripts disponíveis
 
-### ✅ Instalar dependências
+### Instalar dependências
 
 ```bash
 nvm use 16
 yarn install
 ```
 
-### 🛠️ Rodar o build
+### Build
 
 ```bash
 nvm use 16
@@ -31,7 +31,7 @@ Se estiver usando `.env` no formato padrão (sem `export`), use:
 npx dotenv -e .env -- yarn build
 ```
 
-### 🧪 Rodar o projeto localmente (Firebase Hosting)
+### Caso queira rodar o projeto localmente (Firebase Hosting)
 
 ```bash
 nvm exec 20 firebase emulators:start --only hosting
@@ -77,10 +77,10 @@ PRIVATE_KEY=
 
 ## 👨‍💻 Desenvolvimento
 
-**Daniel Coronel**
-Desenvolvedor do Site
+**Daniel Coronel**  
+Desenvolvedor inicial 
 
-### 👨‍💻 Manutenção e Correção da última versão
+### 👨‍💻 Manutenção e ajustes na última versão
 
 **Davi Santos**  
 Gestor de Tecnologia @ Olabi & Instituto Fogo Cruzado  
