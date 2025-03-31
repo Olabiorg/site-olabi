@@ -39,7 +39,7 @@ nvm exec 20 firebase emulators:start --only hosting
 
 Depois, acesse: [http://localhost:5000](http://localhost:5000)
 
-### 🚀 Deploy para produção (Firebase Hosting)
+### Deploy para produção (Firebase Hosting)
 
 ```bash
 nvm exec 20 firebase deploy --only hosting
@@ -80,7 +80,7 @@ PRIVATE_KEY=
 **Daniel Coronel**  
 Desenvolvedor inicial 
 
-### 👨‍💻 Manutenção e ajustes na última versão
+### Manutenção e Correções
 
 **Davi Santos**  
 Gestor de Tecnologia @ Olabi & Instituto Fogo Cruzado  
